@@ -1,24 +1,18 @@
-const form = document.getElementById('formulario');
-const first = document.getElementById('primeiroNumero');
-const second = document.getElementById('segundoNumero');
-const containerSucesso = document.querySelector('.message');
-form.addEventListener('submit', function(e)
-{
-    e.preventDefault();
-
-    const sucesso = `O número <b>${second.value}</b> é maior que o número <b>${first.value}.</b>`;
-
-    if (second.value > first.value){
+$(document).ready(function(){
+    $('form').on('submit', function(e){
+        e.preventDefault();
+        const novaTarefa = $('#nome-da-tarefa-nova').val();
+        const novoItem =$('<li class="oier"></li>');
         
-        containerSucesso.innerHTML = sucesso;
-        containerSucesso.style.display ='block';
-                
-    } else{
-        alert('Verifique os números e tente novamente.')
-    }
-
+        $(`
+        <li>
+        ${novaTarefa}
+        </li>
+    `).appendTo(novoItem);
+    $(novoItem).appendTo('ul');
+    $('#nome-da-tarefa-nova').val('');
+        $(novoItem).click(function() {
+            $(novoItem).wrap('<strike>');    
+    })
 })
-form.addEventListener('reset', function(e)
-{
-    location.reload();
 })

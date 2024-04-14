@@ -1,38 +1,36 @@
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 *{
-    background-color: #f0dcdc;
+    font-family: 'poppins';
     box-sizing: border-box;
-    margin: 20px 15%;
+    margin: 0;
 }
-.container
-{
-    color: rgb(0, 0, 0);
-    padding: 8px;
-    display: block;
-
+body header{
+    display: flex;
+    margin-top: 25px;
+    padding: 20px;
+    justify-content: center;
 }
-input{
-    display: block;
-    margin: none;
-    padding: 2px;
-    margin-bottom: 4px;
+.container{
+    margin: 60px;
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    
 }
-button{
-    background-color: aliceblue;
-    color: black;
-    margin-right: 4px;
+.list{
+    display: flex;
+    justify-content: center;
 }
-button:hover{
-    background-color: pink;
+ul li:hover{
+    text-decoration: line-through;
 }
-.message{
-    background-color: pink;
-    padding: 16px;
-    color: black;
-    display: none;
+.feito{
+    text-decoration: line-through;
 }
-.sucess-message{
-    background-color: rgb(238, 114, 135);
-    padding: 16px;
-    color: #fff;
-    display: none;
+.oier input[type='checkbox']:checked+div {
+    text-decoration: line-through;
 }
