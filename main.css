@@ -30,6 +30,7 @@ form input{
     width: 950px;
     max-width: 100%;
     border-width: 1px;
+    padding: 2px;
 }
 form button{
     margin-top: 15px;
@@ -42,8 +43,13 @@ form button{
 }
 form input:hover{
     border-width: 2px;
+    
 }
 form button:hover{
     border-width: 2px;
     background-color: #26e01f;
+}
+.numeros{
+    max-width: 200px;
+    display: inline-block;
 }
