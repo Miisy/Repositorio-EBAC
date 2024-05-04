@@ -16,7 +16,7 @@ function sassMin(){
 }
 
 function jsMin(){
-    return gulp.src('./source/source/scripts/*.js')
+    return gulp.src('./source/scripts/*.js')
     .pipe(uglify())
     .pipe(obfuscate())
     .pipe(gulp.dest('./build/scripts'))
@@ -29,7 +29,7 @@ function imgMin(){
 
 exports.img = imgMin;
 exports.default = function(){
-    gulp.watch('./source/styles/*.scss', {ignoreInicial: false}, gulp.series(sassMin))
-    gulp.watch('./source/styles/*.scss', {ignoreInicial: false}, gulp.series(jsMin))
-    gulp.watch('./source/styles/*.scss', {ignoreInicial: false}, gulp.series(imgMin))
+    gulp.watch('./source/styles/*.scss', {ignoreInitial: false}, gulp.series(sassMin))
+    gulp.watch('./source/styles/*.scss', {ignoreInitial: false}, gulp.series(jsMin))
+    gulp.watch('./source/styles/*.scss', {ignoreInitial: false}, gulp.series(imgMin))
 }
