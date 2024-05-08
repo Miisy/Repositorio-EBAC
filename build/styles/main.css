@@ -51,6 +51,11 @@ header .container .menu li a {
 section {
   padding: 56px 0;
 }
+@media (max-width:767px) {
+  section {
+    padding: 15px 0;
+  }
+}
 section .product {
   margin-top: 40px;
   display: grid;
@@ -96,7 +101,7 @@ section .product-button:hover {
   display: flex;
   max-width: 280px;
   width: 100%;
-  padding-top: 12px ;
+  padding-top: 40px ;
   justify-content: space-between;
 }
 .social li {
