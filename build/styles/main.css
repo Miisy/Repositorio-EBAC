@@ -92,3 +92,19 @@ section .product-button {
 section .product-button:hover {
   background-color: #4cd137;
 }
+.social {
+  display: flex;
+  max-width: 280px;
+  width: 100%;
+  padding-top: 12px ;
+  justify-content: space-between;
+}
+.social li {
+  margin-right: 16px;
+}
+.social li img {
+  transition: all ease 0.2s;
+}
+.social li img:hover {
+  transform: scale(1.2);
+}
